@@ -15,8 +15,8 @@ const images = [
 
 const galleryList = document.querySelector(".gallery");
 
-const stringOfElements = images.reduce((stringOfElements, { url, alt }) => {
-  return stringOfElements + `<img class="image" src="${url}" alt="${alt}">`;
+const stringOfElements = images.reduce((string, { url, alt }) => {
+  return string + `<img class="image" src="${url}" alt="${alt}">`;
 }, "");
 
 galleryList.insertAdjacentHTML("beforeend", stringOfElements);
