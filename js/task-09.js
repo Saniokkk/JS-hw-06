@@ -1,5 +1,5 @@
 const colorValue = document.querySelector(".color");
-const changeColorBtn = document.querySelector("button.change-color")
+const changeColorBtn = document.querySelector("button.change-color");
 
 changeColorBtn.addEventListener("click", handleChangeBgColor);
 
